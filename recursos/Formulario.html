@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOGWARTS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body{
+            background: linear-gradient(to left, #e1c07d86, #5c432aa0), url(../img/formulario/fondo.jpg);
+        }
+
+        body.dark {
+            background: linear-gradient(to left, #234448cc,#15252cab), url(../img/formulario/fondo.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="form-main">
+        <nav>
+            <button class="switch" id="switch">
+                <span>
+                    <img src="../img/iconos/6661565.png" class="modooscuro">
+                </span>
+                <span>
+                    <img src="../img/iconos/moon_112461.png" class="modooscuro">
+                </span>
+            </button>
+            <li><a href="../index.html">INICIO</a></li>
+        </nav>
+        <form action="" class="Form" id="Form" name="formulario">
+            <h1 class="titulo">¿EN QUE COLEGIO Y CURSO ESTARIAS EN EL MUNDO MÁGICO?</h1>
+            <div class="Formulario_grupo" id="Formulario_grupo">
+                <label for="nombre" class="form-label" id="form-label-nombre">Nombre: </label>
+                <div class="form-input" id="form-input-nombre">
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Harry">
+                </div>
+                <p class="error" id="error-nombre">No se deben ingresar números.</p>
+            </div>
+            <div class="Formulario_grupo" id="Formulario_grupo">
+                <label for="edad" class="form-label" id="form-label-edad">Edad: </label>
+                <div class="form-input" id="form-input-edad">
+                    <input type="text" class="form-control" id="edad" name="edad" placeholder="edad">
+                </div>
+                <p class="error" id="error-edad">No se deben ingresar letras.</p>
+            </div>
+            <div class="Formulario_grupo" id="Formulario_grupo">
+                <label for="lugar" class="form-label" id="form-label-lugar">Lugar de residencia: </label>
+                <div class="form-input" id="form-input-lugar">
+                    <select name="lugar" id="lugar" class="form-control" required>
+                        <option value="0" disabled selected>--Seleccionar--</option>
+                        <option value="1">Reino Unido</option>
+                        <option value="2">Escocia</option>
+                        <option value="3">EE.UU</option>
+                        <option value="4">Japon</option>
+                        <option value="5">Africa</option>
+                        <option value="6">España</option>
+                        <option value="7">Francia</option>
+                        <option value="8">Rusia</option>
+                        <option value="9">Portugal</option>
+                        <option value="10">Belgica</option>
+                        <option value="11">Luxemburgo</option>
+                        <option value="12">Paises Bajos</option>
+                        <option value="13">Bulgaria</option>
+                        <option value="14">Sudamerica</option>
+                    </select>
+                </div>
+                <p class="error" id="error-lugar">se debe ingresar una opcion.</p>
+            </div>
+            <div class="form_mensj" id="form_mensj">
+                <p>Error: Por favor rellenar todos los espacios.</p>
+            </div>
+            <div class="form-grup">
+                <button type="submit" class="btn" >Validar</button>
+            </div>
+        </form>
+    </main>
+    <script src="../js/main.js" type="module"></script>
+</body>
+
+</html>

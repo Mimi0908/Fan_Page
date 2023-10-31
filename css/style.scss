@@ -1,0 +1,348 @@
+@import "variables.scss";
+@import "basecuerpo.scss";
+@import "botones.scss";
+@import "footer.scss";
+@import "fuentes.scss";
+@import "tarjetasflip.scss";
+@import "test.scss";
+@import "tutorial.scss";
+@import "videos.scss";
+@import "icono.scss";
+@import "modooscuro.scss";
+@import "header.scss";
+@import "mixins.scss";
+@import "formulario.scss";
+
+.index {
+    &.dark {
+        background: #272727;
+        color: #e6f9fa;
+    }
+}
+
+li{
+    display: flex;
+    margin: 25px 0px 0px 20px;
+    @include theme;
+    font-weight: 200px;
+    a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        justify-content: center;
+        font-size: 20px;
+    }
+}
+
+h1 {
+    font-family: harryp;
+}
+
+label{
+    @include theme;
+    font-size: 20px;
+}
+
+input{
+    @include theme;
+    font-size: 20px;
+}
+
+option{
+    @include theme;
+    font-size: 15px;
+}
+
+select{
+    @include theme;
+    font-size: 20px;
+}
+
+p {
+    @include theme;
+    font-size: 25px;
+}
+
+h4 {
+    @include theme ($theme2: #28524E);
+}
+
+h3 {
+    @include theme ($theme2: $color-titulo6);
+}
+
+h2 {
+    @include theme ($theme2: $color-titulo6);
+}
+
+.tit1 {
+    color: $color-titulo;
+
+    body.dark & {
+        color: $color-titulo6;
+    }
+}
+
+a {
+    @include theme;
+}
+
+/*botones*/
+.second {
+    width: 200px;
+    margin-left: 200px;
+
+    a {
+        padding-left: 10px;
+    }
+}
+
+.boton {
+    @include boton;
+
+    body.dark & {
+        @include boton ($theme2: #28524E, $theme: #1D353F, $theme3: #2F5A60);
+    }
+}
+
+@media screen and (max-width:1390px) {
+    .second {
+        width: 200px;
+        margin-left: 115px;
+    }
+}
+
+/*footer*/
+footer {
+    body.dark & {
+        background-color: #16181d;
+
+        .creator {
+            background-color: #0D0E10;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.harry {
+    body.dark & {
+        filter: saturate(80%);
+    }
+}
+
+/*header*/
+
+header {
+    @include header;
+
+    body.dark & {
+        @include header ($theme2: #252525, $theme: #234448c7, $theme3: #15252cdb, $imagen1: url(../img/cuerpo/fondodark.jpg));
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    .textos-header {
+        font-size: 60px;
+        color: $color-titulo2;
+
+        body.dark & {
+            color: $color-titulo5;
+        }
+    }
+}
+
+/*tarjetas*/
+.card {
+    body.dark & {
+
+        box-shadow: 1px 1px 30px 0px #2F5A60;
+    }
+}
+
+.card_back {
+    @include tema($imagen1: white);
+
+    body.dark & {
+        @include tema ($theme2: #252525, $theme: #234448c7, $theme3: #15252cdb, $imagen1: grey);
+    }
+
+    h3 {
+        color: $color-titulo4;
+    }
+}
+
+.body_card_front {
+    .escu {
+        body.dark & {
+            filter: saturate(85%);
+        }
+    }
+}
+
+/*test*/
+
+.test {
+    img {
+        width: 230px;
+        height: 250px;
+        margin: 30px;
+        margin-top: 70px;
+    }
+}
+
+.escudo {
+    body.dark & {
+        filter: saturate(80%);
+    }
+}
+
+@media screen and (max-width:1390px) {
+    .test {
+        img {
+            margin-top: 50px;
+        }
+    }
+}
+
+/*tutorial*/
+.tuto {
+    @include header ($theme2: white, $theme: #e1c07de3, $theme3: #78522cee, $imagen1: url(../img/cuerpo/patronus.jpg));
+
+    body.dark & {
+        @include header ($theme2: #252525, $theme: #234448f5, $theme3: #15252cf9, $imagen1: url(../img/cuerpo/patronus.jpg));
+    }
+
+    h3 {
+        color: $color-titulo3;
+        font-size: 30px;
+    }
+
+    h2 {
+        color: $color-titulo3;
+        font-size: 35px;
+    }
+
+    h1 {
+        color: $color-titulo3;
+        margin-bottom: 10px;
+    }
+
+    .tuto2 {
+        h4 {
+            @extend h3;
+            body.dark & {
+                color: #59a2a5;
+            }
+        }
+    }
+
+    .comida1 {
+        text-align: center;
+
+        .comida {
+            width: 500px;
+            border-radius: 10px;
+            margin: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0px 10px 15px 1px rgba(20, 19, 19, 0.65);
+
+        }
+    }
+}
+
+.comida {
+    body.dark & {
+        filter: saturate(80%);
+    }
+}
+
+/*video*/
+
+.video {
+    @include header ($theme2: white, $theme: #e1c07dd3, $theme3: #78522cda, $imagen1: url(../img/cuerpo/snitch.jpg));
+
+    body.dark & {
+        @include header ($theme2: #252525, $theme: #234448e6, $theme3: #15252cf0, $imagen1: url(../img/cuerpo/snitch.jpg));
+    }
+
+    h1 {
+        margin-left: 40px;
+        color: $color-titulo3;
+    }
+
+    .enlace {
+        font-size: 30px;
+        margin: 30px;
+        text-align: center;
+
+        a {
+            color: $color-titulo;
+            font-weight: 1000;
+
+            body.dark & {
+                color: $color-titulo6;
+            }
+        }
+    }
+}
+
+.texto {
+    max-width: 580px;
+    margin: 20px;
+    padding-left: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+/*icono*/
+.icono2 {
+    body.dark & {
+        background-color: #0e0e0e;
+        box-shadow: 1px 1px 30px 0px #2F5A60;
+    }
+}
+
+.fondo {
+    img {
+        body.dark & {
+            filter: invert(100%);
+        }
+    }
+}
+
+/*formulario*/
+.btn{
+    @include boton;
+    width: 120px;
+    height: 45px;
+    border-radius: 9px;
+    margin: auto;
+    margin-left: 0;
+    background-color: #4e0b0a;
+    box-shadow: 1px 1px 30px -5px #491918;
+    border: none;
+    color: white;
+    @include theme;
+    font-size: 20px;
+    body.dark &{
+        background-color: #28524E;
+        box-shadow: 1px 1px 30px -5px #1D353F;
+    }
+}
+.btn:hover {
+    transition: all 0.4s linear 0.3s;
+    box-shadow: 1px 1px 30px 0px #761817;
+    body.dark &{
+        box-shadow: 1px 1px 30px 0px #2F5A60;
+    }
+}
+
+.titulo{
+    body.dark &{
+        color: #c7d8d9;
+    }
+}

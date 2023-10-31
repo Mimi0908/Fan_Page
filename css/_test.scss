@@ -1,0 +1,32 @@
+.test {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .text {
+        width: 600px;
+        margin: 30px;
+        text-align: center;
+
+        h1 {
+            margin-left: 70px;
+        }
+    }
+}
+
+@media screen and (max-width:1390px) {
+    .test {
+        .text {
+            width: 450px;
+            margin: 5px;
+
+            h1 {
+                margin-left: 50px;
+            }
+        }
+    }
+}

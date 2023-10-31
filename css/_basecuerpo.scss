@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 9px 130px 10px 130px;
+    padding-top: 40px;
+
+    .tit1 {
+        margin: 7px 50px 7px 7px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:1390px) {
+
+    main {
+        margin: 9px 50px 10px 50px;
+    }
+
+}

@@ -1,0 +1,33 @@
+.video {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+.video2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+video {
+    border-radius: 20px;
+    width: 600px;
+    position: static;
+}
+
+@media screen and (max-width:1390px) {
+    .video {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:1560px) {
+
+    video {
+        width: 800px;
+    }
+}

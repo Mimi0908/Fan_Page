@@ -1,0 +1,29 @@
+footer {
+    background-color: $color-footer1;
+    bottom: 0;
+
+    .footerc {
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+
+    .creator {
+        width: 100%;
+        background-color: $color-footer2;
+        padding: 20px;
+        text-align: center;
+
+        p {
+            font-size: 20px;
+            color: whitesmoke;
+
+            .designer {
+                opacity: 0.7;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 400;
+                margin: 0px 5px;
+            }
+        }
+    }
+}

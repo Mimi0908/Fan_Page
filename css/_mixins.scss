@@ -1,0 +1,26 @@
+@mixin header ($theme2: white, $theme: #e1c07d86, $theme3: #5c432aa0, $imagen1: url(../img/cuerpo/fondo.jpg)) {
+    background: $theme2;
+    background: linear-gradient(to right, $theme, $theme3), $imagen1;
+}
+@mixin tema ($theme2: white, $theme: #e1c07d86, $theme3: #5c432aa0, $imagen1: url(../img/cuerpo/fondo.jpg)) {
+    background: $theme2;
+    background: linear-gradient(to bottom, $theme, $theme3), $imagen1;
+}
+
+@mixin boton ($theme2: #4e0b0a, $theme: #491918, $theme3: #761817) {
+    background-color: $theme2;
+    box-shadow: 1px 1px 30px -5px $theme;
+
+    &:hover {
+        transition: all 0.4s linear 0.3s;
+        box-shadow: 1px 1px 30px 0px $theme3;
+    }
+}
+
+@mixin theme ($theme2: #e6f9fa) {
+    font-family: dumb;
+
+    body.dark & {
+        color: $theme2;
+    }
+}
