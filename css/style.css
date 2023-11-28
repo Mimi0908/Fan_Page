@@ -176,29 +176,6 @@ footer .creator p .designer {
     margin-left: 50px;
   }
 }
-.tuto {
-  width: 100%;
-  border-radius: 20px;
-  padding: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 40px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-.tuto .tuto2 {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-.tuto .tuto2 .t {
-  margin: 15px;
-  text-align: justify;
-}
-.tuto .t {
-  margin: 15px;
-  text-align: justify;
-}
-
 .video {
   width: 100%;
   border-radius: 20px;
@@ -460,6 +437,77 @@ body.dark .form-control {
     width: 500px;
   }
 }
+.galeria {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 30%;
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 15px;
+  transition: 0.3s;
+  position: relative;
+  border-radius: 20px;
+}
+
+.item:hover {
+  width: 70%;
+}
+
+.overlay {
+  position: absolute;
+  background: linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.7));
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.item .titulo {
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 0;
+  transform-origin: left top 0;
+  text-shadow: 2px 2px 3px #000;
+  letter-spacing: 2px;
+  left: 20px;
+}
+
+.item .nombre {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  right: 20px;
+  transition: 1s;
+  opacity: 0;
+}
+
+.item .titulo::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 120%;
+  background-color: #371c4b;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+  line-height: 40px;
+}
+
+.item:hover .nombre {
+  opacity: 1;
+}
+
+.item:hover .titulo::after {
+  width: 100%;
+}
+
 .index.dark {
   background: #272727;
   color: #e6f9fa;
@@ -532,10 +580,10 @@ body.dark h4 {
   color: #28524E;
 }
 
-h3, .tuto .tuto2 h4 {
+h3, .card .tuto2 h4 {
   font-family: dumb;
 }
-body.dark h3, body.dark .tuto .tuto2 h4, .tuto .tuto2 body.dark h4 {
+body.dark h3, body.dark .card .tuto2 h4, .card .tuto2 body.dark h4 {
   color: #9BC2C5;
 }
 
@@ -629,25 +677,106 @@ body.dark header .textos-header {
   color: #699FA1;
 }
 
+/*galeria*/
+.img1 {
+  background-image: url(../img/galeria/gryffindor.jpg);
+}
+
+.img2 {
+  background-image: url(../img/galeria/slytherin.jpg);
+}
+
+.img3 {
+  background-image: url(../img/galeria/hufflepuff.jpg);
+}
+
+.img4 {
+  background-image: url(../img/galeria/ravenclaw.jpg);
+}
+
+body.dark .overlay {
+  background: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.7));
+}
+
 /*tarjetas*/
+.card {
+  width: 950px;
+  height: 650px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  background: white;
+  background: linear-gradient(to right, rgba(225, 192, 125, 0.8901960784), rgba(184, 132, 79, 0.9333333333)), url(../img/cuerpo/patronus.jpg);
+}
 body.dark .card {
-  box-shadow: 1px 1px 30px 0px #2F5A60;
+  background: #252525;
+  background: linear-gradient(to right, rgba(35, 68, 72, 0.9607843137), rgba(72, 119, 139, 0.976)), url(../img/cuerpo/patronus.jpg);
+}
+.card .comida1 {
+  text-align: center;
+  margin: 30px;
+}
+.card .comida1 .comida {
+  width: 700px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 15px 1px rgba(20, 19, 19, 0.65);
+}
+.card h3, .card .tuto2 h4 {
+  color: rgb(36, 0, 0);
+  font-size: 20px;
+}
+.card h2 {
+  color: rgb(36, 0, 0);
+  font-size: 40px;
+}
+.card h1 {
+  color: rgb(36, 0, 0);
+  margin-bottom: 10px;
+}
+.card .tuto2 {
+  float: left;
+  text-align: left;
+  width: 40%;
+}
+body.dark .card .tuto2 h4 {
+  color: #59a2a5;
+}
+.card .tuto3 {
+  float: right;
+  text-align: justify;
+  width: 55%;
 }
 
 .card_back {
+  border-radius: 50px;
   background: white;
-  background: linear-gradient(to bottom, rgba(225, 192, 125, 0.5254901961), rgba(92, 67, 42, 0.6274509804)), white;
+  background: linear-gradient(to right, rgba(225, 192, 125, 0.8901960784), rgba(184, 132, 79, 0.9333333333)), url(../img/cuerpo/patronus.jpg);
 }
 body.dark .card_back {
   background: #252525;
-  background: linear-gradient(to bottom, rgba(35, 68, 72, 0.7803921569), rgba(21, 37, 44, 0.8588235294)), grey;
+  background: linear-gradient(to right, rgba(35, 68, 72, 0.9607843137), rgba(72, 119, 139, 0.976)), url(../img/cuerpo/patronus.jpg);
 }
-.card_back h3, .card_back .tuto .tuto2 h4, .tuto .tuto2 .card_back h4 {
+.card_back h3, .card_back .card .tuto2 h4, .card .tuto2 .card_back h4 {
   color: #320d0c;
 }
+.card_back .body_card_back {
+  padding: 20px 30px;
+}
 
-body.dark .body_card_front .escu {
-  filter: saturate(85%);
+.body_card_front {
+  width: 100%;
+  border-radius: 20px;
+  padding: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+body.dark .comida {
+  filter: saturate(80%);
 }
 
 /*test*/
@@ -667,45 +796,6 @@ body.dark .escudo {
     margin-top: 50px;
   }
 }
-/*tutorial*/
-.tuto {
-  background: white;
-  background: linear-gradient(to right, rgba(225, 192, 125, 0.8901960784), rgba(120, 82, 44, 0.9333333333)), url(../img/cuerpo/patronus.jpg);
-}
-body.dark .tuto {
-  background: #252525;
-  background: linear-gradient(to right, rgba(35, 68, 72, 0.9607843137), rgba(21, 37, 44, 0.9764705882)), url(../img/cuerpo/patronus.jpg);
-}
-.tuto h3, .tuto .tuto2 h4 {
-  color: rgb(36, 0, 0);
-  font-size: 30px;
-}
-.tuto h2 {
-  color: rgb(36, 0, 0);
-  font-size: 35px;
-}
-.tuto h1 {
-  color: rgb(36, 0, 0);
-  margin-bottom: 10px;
-}
-body.dark .tuto .tuto2 h4 {
-  color: #59a2a5;
-}
-.tuto .comida1 {
-  text-align: center;
-}
-.tuto .comida1 .comida {
-  width: 500px;
-  border-radius: 10px;
-  margin: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0px 10px 15px 1px rgba(20, 19, 19, 0.65);
-}
-
-body.dark .comida {
-  filter: saturate(80%);
-}
-
 /*video*/
 .video {
   background: white;
