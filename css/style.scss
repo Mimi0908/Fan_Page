@@ -12,6 +12,7 @@
 @import "mixins.scss";
 @import "formulario.scss";
 @import "galeriaInteractiva.scss";
+@import "informaciónEscuelas.scss";
 
 .index {
     &.dark {
@@ -371,5 +372,31 @@ header {
 .titulo{
     body.dark &{
         color: #c7d8d9;
+    }
+}
+
+/*paginas*/
+.container_slytherin{
+    background-image: url("../img/pagina_informativa/slytherin.jpg");
+    .left_slytherin{
+        background: linear-gradient(#072100,rgba(204, 204, 204, 0.668));
+    }
+}
+.container_hufflepuff{
+    background-image: url("../img/pagina_informativa/hufflepuff.jpg");
+    .left_hufflepuff{
+        background: linear-gradient(#0c0c0a, #f9b8229d);
+    }
+}
+.container_ravenclaw{
+    background-image: url("../img/pagina_informativa/ravenclaw.jpg");
+    .left_ravenclaw{
+        background: linear-gradient(#1A3956, #8e501dc3);
+    }
+}
+.container_gryffindor{
+    background-image: url("../img/pagina_informativa/gryffindor.jpg");
+    .left_gryffindor{
+        background: linear-gradient(#660000, #e09c0997);
     }
 }

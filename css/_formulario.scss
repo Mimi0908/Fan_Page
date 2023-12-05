@@ -33,19 +33,22 @@ form{
 }
 .form-label{
     display: block;
+    font-size: 25px;
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
 }
 .form-label-incorrecto{
-    -webkit-text-stroke: 0.5px #910305;
+    -webkit-text-stroke:0.2px #fff;
+    color:#910305;
     display: block;
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
 }
 .form-label-correcto{
-    -webkit-text-stroke: 0.5px #225b36;
+    -webkit-text-stroke:0.2px rgb(15, 174, 0);
+    color:#225b36;
     display: block;
     font-weight: 700;
     padding: 10px;

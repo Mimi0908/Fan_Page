@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-main {
+.cuerpo {
   margin: 9px 130px 10px 130px;
   padding-top: 40px;
 }
-main .tit1 {
+.cuerpo .tit1 {
   margin: 7px 50px 7px 7px;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -16,7 +16,7 @@ main .tit1 {
 }
 
 @media screen and (max-width: 1390px) {
-  main {
+  .cuerpo {
     margin: 9px 50px 10px 50px;
   }
 }
@@ -342,13 +342,15 @@ body.dark .form-main {
 
 .form-label {
   display: block;
+  font-size: 25px;
   font-weight: 700;
   padding: 10px;
   cursor: pointer;
 }
 
 .form-label-incorrecto {
-  -webkit-text-stroke: 0.5px #910305;
+  -webkit-text-stroke: 0.2px #fff;
+  color: #910305;
   display: block;
   font-weight: 700;
   padding: 10px;
@@ -356,7 +358,8 @@ body.dark .form-main {
 }
 
 .form-label-correcto {
-  -webkit-text-stroke: 0.5px #225b36;
+  -webkit-text-stroke: 0.2px rgb(15, 174, 0);
+  color: #225b36;
   display: block;
   font-weight: 700;
   padding: 10px;
@@ -508,6 +511,36 @@ body.dark .form-control {
   width: 100%;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.left {
+  padding: 30px;
+}
+
+.volver {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.info {
+  padding: 15px;
+  text-align: center;
+}
+.info p {
+  text-align: justify;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 3fr 1fr;
+  }
+}
 .index.dark {
   background: #272727;
   color: #e6f9fa;
@@ -878,4 +911,33 @@ body.dark .btn:hover {
 
 body.dark .titulo {
   color: #c7d8d9;
+}
+
+/*paginas*/
+.container_slytherin {
+  background-image: url("../img/pagina_informativa/slytherin.jpg");
+}
+.container_slytherin .left_slytherin {
+  background: linear-gradient(#072100, rgba(204, 204, 204, 0.668));
+}
+
+.container_hufflepuff {
+  background-image: url("../img/pagina_informativa/hufflepuff.jpg");
+}
+.container_hufflepuff .left_hufflepuff {
+  background: linear-gradient(#0c0c0a, rgba(249, 184, 34, 0.6156862745));
+}
+
+.container_ravenclaw {
+  background-image: url("../img/pagina_informativa/ravenclaw.jpg");
+}
+.container_ravenclaw .left_ravenclaw {
+  background: linear-gradient(#1A3956, rgba(142, 80, 29, 0.7647058824));
+}
+
+.container_gryffindor {
+  background-image: url("../img/pagina_informativa/gryffindor.jpg");
+}
+.container_gryffindor .left_gryffindor {
+  background: linear-gradient(#660000, rgba(224, 156, 9, 0.5921568627));
 }/*# sourceMappingURL=style.css.map */

@@ -24,22 +24,22 @@ else {
 }
 
 /*formulario*/ 
-import { validar, campos, resetearEstilos} from "./ExpresionesRegulares.js";
+import { validar, campos,validarLugar, resetearEstilos} from "./ExpresionesRegulares.js";
 
 const formulario=document.getElementById("Form");
 const inputs=document.querySelectorAll("#Form input");
-const select= document.querySelector("#lugar");
+const select= document.getElementById("lugar");
 
 inputs.forEach( (input)=> {
     input.addEventListener('blur', validar);
     input.addEventListener('keyup', validar);
 });
 
-let option=select.value;
+select.addEventListener('change', validarLugar);
 
 formulario.addEventListener('submit',(e)=>{
     e.preventDefault();
-    if(option!=0 && campos.edad && campos.nombre){
+    if(campos.lugar && campos.edad && campos.nombre){
         alert("enviado");
         eliminarEstilos();
         resetearEstilos();

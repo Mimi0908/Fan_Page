@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-main {
+.cuerpo {
     margin: 9px 130px 10px 130px;
     padding-top: 40px;
 
@@ -18,7 +18,7 @@ main {
 
 @media screen and (max-width:1390px) {
 
-    main {
+    .cuerpo {
         margin: 9px 50px 10px 50px;
     }
 
