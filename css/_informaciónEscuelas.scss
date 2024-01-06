@@ -12,10 +12,29 @@
     text-decoration: none;
     font-size: 20px;
 }
+#frase-libro{
+    padding: 0px 40px 5px;
+    font-size: 20px;
+    text-align: center;
+}
+#autor{
+    padding: 5px 40px 30px;
+    font-size: 20px;
+    text-align: right;
+}
 .info{
-    padding: 15px;
+    color: white;
+    padding: 15px 20px;
     text-align:center;
+    h1{
+        font-size: 45px;
+    }
+    img{
+        width: 350px;
+        margin: 10px 10px 5px;
+    }
     p{
+        margin: 20px;
         text-align: justify;
     }
 }

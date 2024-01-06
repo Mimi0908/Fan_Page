@@ -379,24 +379,28 @@ header {
 .container_slytherin{
     background-image: url("../img/pagina_informativa/slytherin.jpg");
     .left_slytherin{
-        background: linear-gradient(#072100,rgba(204, 204, 204, 0.668));
+        background:#072100bc;
+        //linear-gradient(#072100,rgba(204, 204, 204, 0.668));
     }
 }
 .container_hufflepuff{
     background-image: url("../img/pagina_informativa/hufflepuff.jpg");
     .left_hufflepuff{
-        background: linear-gradient(#0c0c0a, #f9b8229d);
+        background: #0c0c0ab9;
+        //linear-gradient(#0c0c0a, #f9b8229d)
     }
 }
 .container_ravenclaw{
     background-image: url("../img/pagina_informativa/ravenclaw.jpg");
     .left_ravenclaw{
-        background: linear-gradient(#1A3956, #8e501dc3);
+        background: #1a3956bc;
+        //linear-gradient(#1A3956, #8e501dc3);
     }
 }
 .container_gryffindor{
     background-image: url("../img/pagina_informativa/gryffindor.jpg");
     .left_gryffindor{
-        background: linear-gradient(#660000, #e09c0997);
+        background:#250000be;
+        //linear-gradient(#3a0000, #95680797);
     }
 }

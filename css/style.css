@@ -528,11 +528,32 @@ body.dark .form-control {
   font-size: 20px;
 }
 
-.info {
-  padding: 15px;
+#frase-libro {
+  padding: 0px 40px 5px;
+  font-size: 20px;
   text-align: center;
 }
+
+#autor {
+  padding: 5px 40px 30px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.info {
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+.info h1 {
+  font-size: 45px;
+}
+.info img {
+  width: 350px;
+  margin: 10px 10px 5px;
+}
 .info p {
+  margin: 20px;
   text-align: justify;
 }
 
@@ -918,26 +939,26 @@ body.dark .titulo {
   background-image: url("../img/pagina_informativa/slytherin.jpg");
 }
 .container_slytherin .left_slytherin {
-  background: linear-gradient(#072100, rgba(204, 204, 204, 0.668));
+  background: rgba(7, 33, 0, 0.737254902);
 }
 
 .container_hufflepuff {
   background-image: url("../img/pagina_informativa/hufflepuff.jpg");
 }
 .container_hufflepuff .left_hufflepuff {
-  background: linear-gradient(#0c0c0a, rgba(249, 184, 34, 0.6156862745));
+  background: rgba(12, 12, 10, 0.7254901961);
 }
 
 .container_ravenclaw {
   background-image: url("../img/pagina_informativa/ravenclaw.jpg");
 }
 .container_ravenclaw .left_ravenclaw {
-  background: linear-gradient(#1A3956, rgba(142, 80, 29, 0.7647058824));
+  background: rgba(26, 57, 86, 0.737254902);
 }
 
 .container_gryffindor {
   background-image: url("../img/pagina_informativa/gryffindor.jpg");
 }
 .container_gryffindor .left_gryffindor {
-  background: linear-gradient(#660000, rgba(224, 156, 9, 0.5921568627));
+  background: rgba(37, 0, 0, 0.7450980392);
 }/*# sourceMappingURL=style.css.map */
