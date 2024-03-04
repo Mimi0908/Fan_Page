@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "quiz.scss";
 @import "basecuerpo.scss";
 @import "botones.scss";
 @import "footer.scss";
@@ -345,6 +346,7 @@ header {
 /*formulario*/
 .btn{
     @include boton;
+    cursor: pointer;
     width: 120px;
     height: 45px;
     border-radius: 9px;
@@ -379,7 +381,7 @@ header {
 .container_slytherin{
     background-image: url("../img/pagina_informativa/slytherin.jpg");
     .left_slytherin{
-        background:#072100bc;
+        background:#00110cbc;
         //linear-gradient(#072100,rgba(204, 204, 204, 0.668));
     }
 }
@@ -393,7 +395,7 @@ header {
 .container_ravenclaw{
     background-image: url("../img/pagina_informativa/ravenclaw.jpg");
     .left_ravenclaw{
-        background: #1a3956bc;
+        background: #112538bc;
         //linear-gradient(#1A3956, #8e501dc3);
     }
 }

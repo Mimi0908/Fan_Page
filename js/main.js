@@ -39,10 +39,17 @@ select.addEventListener('change', validarLugar);
 
 formulario.addEventListener('submit',(e)=>{
     e.preventDefault();
-    if(campos.lugar && campos.edad && campos.nombre){
+    const opcion= select.value;
+    if(campos.lugar && campos.nombre){
         alert("enviado");
+        document.getElementById('form_mensj').classList.remove('form_mensj-activo');
         eliminarEstilos();
         resetearEstilos();
+        if(opcion=== '1' && opcion=== '2'){
+            window.location.href ='QuizHogwarts.html'
+        }
+        
+        
     }else {
         document.getElementById('form_mensj').classList.add('form_mensj-activo');
       }
@@ -51,3 +58,4 @@ formulario.addEventListener('submit',(e)=>{
 function eliminarEstilos(){
     formulario.reset();
 }
+

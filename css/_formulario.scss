@@ -11,7 +11,7 @@ form{
 .form-main{
     background-color: #3b1c1c5c;
     border-radius: 25px;
-    margin-top: 80px;
+    margin: 5% 10%;
     padding: 5px;
     body.dark &{
         background-color: #00151ea1;
@@ -113,11 +113,17 @@ form{
     form{
         width: 600px;
     }
+    .form-main{
+        margin: 10% 5%;
+    }
 }
 
 @media screen and (max-width:700px){
     form{
         width: 500px;
+    }
+    .form-main{
+        margin: 10% 3%;
     }
 }
 

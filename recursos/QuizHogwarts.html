@@ -6,18 +6,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <main>
-        <div class="caja">
-            <div class="pregunta">
-                <div class="imagen">
+<body id="body-quiz">
+    <main >
+        <div id="pantalla-inicial">
+            <div class="titulo-quiz">
+                <h1 id="tit-quiz">Bienvenido a Hogwarts</h1>
+                <p>El sombrero seleccionador está tomando su decisión</p>
+            </div>
+            <button class="btn-quiz" onclick="comenzar()">Empezar selección</button>
+        </div>
+        <div id="quiz">
+            <div class="titulo-quiz">
+                <h1 id="tit-quiz">Bienvenido a Hogwarts</h1>
+                <p>El sombrero seleccionador está tomando su decisión</p>
+            </div>
+            <div id="pregunta-quiz">
+                <p id="pregunta">¿Cuál de las siguientes opciones odiarías más que la gente te llamara?</p>
+            </div>
+            <div id="cuerpo-slider">
+                <div class="slider">
+                    <div class="item" id="op0" onclick="respuesta(0)">
+                        <p id="l0">Común</p>
+                    </div>
+                    <div class="item" id="op1" onclick="respuesta(1)">
+                        <p id="l1">Ignorante</p>
+                    </div>
+                    <div class="item" id="op2" onclick="respuesta(2)">
+                        <p id="l2">Cobarde</p>
+                    </div>
+                    <div class="item" id="op3" onclick="respuesta(3)">
+                        <p id="l3">Egoista</p>
+                    </div>
+                    <button id="next">></button>
+                    <button id="prev"><</button>
                 </div>
-                <div class="op"></div>
-                <div class="op"></div>
-                <div class="op"></div>
-                <div class="op"></div>
             </div>
         </div>
     </main>
+    <script src="../js/quiz.js"></script>
 </body>
 </html>

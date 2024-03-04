@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
 }
-.item{
+.items{
     width: 30%;
     height: 400px;
     background-size: cover;
@@ -14,7 +14,7 @@
     position: relative;
     border-radius: 20px;
 }
-.item:hover{
+.items:hover{
     width: 70%;
 }
 .overlay{
@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
 }
-.item .titulo{
+.items .titulo{
     transform: rotate(-90deg);
     position: absolute;
     bottom: 0;
@@ -35,7 +35,7 @@
     letter-spacing: 2px;
     left: 20px;
 }
-.item .nombre{
+.items .nombre{
     position: absolute;
     bottom: 0;
     margin-bottom: 10px;
@@ -43,7 +43,7 @@
     transition: 1s;
     opacity: 0;
 }
-.item .titulo::after{
+.items .titulo::after{
     position: absolute;
     content: "";
     width: 0%;
@@ -54,9 +54,9 @@
     transition: .5s;
     line-height: 40px;
 }
-.item:hover .nombre{
+.items:hover .nombre{
     opacity: 1;
 }
-.item:hover .titulo::after{
+.items:hover .titulo::after{
     width: 100%;
 }

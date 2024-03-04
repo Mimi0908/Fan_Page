@@ -1,11 +1,9 @@
 const expresiones = {
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
-    edad: /^[0-9]{1,3}$/
+    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/
 }
 
 const campos = {
     nombre: false,
-    edad: false,
     lugar:false
 }
 
@@ -13,9 +11,6 @@ const validar = (e) => {
     switch (e.target.name) {
         case "nombre":
             validarCampo(expresiones.nombre, e.target, 'nombre');
-            break;
-        case "edad":
-            validarCampo(expresiones.edad, e.target, 'edad');
             break;
     }
 }
